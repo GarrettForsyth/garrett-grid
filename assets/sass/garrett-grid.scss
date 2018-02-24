@@ -1,0 +1,71 @@
+$container-size:  992px;
+$number-of-columns: 12;
+
+$vertical-container-margin: 10px;
+
+$vertical-row-margin: 10px;
+$horizontal-row-margin: 10px;
+$row-size: $container-size - 2*$horizontal-row-margin; 
+
+$column-gutter: 10px;
+$col-width: $row-size/ $number-of-columns;
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: $container-size;
+
+  margin-top: $vertical-container-margin;
+  margin-bottom: $vertical-container-margin;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding: 0;
+  padding-top: $vertical-row-margin;
+
+  .row {
+    width: 100%;
+    max-width: $row-size;
+
+    margin-bottom: $vertical-row-margin;
+    margin-right: auto;
+    margin-left: auto;
+
+    [class*=col-] {
+      float: left;
+      display: inline-block;
+
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+
+    }
+
+    [class*=col-]:last-child {
+      margin-right: 50% * ($column-gutter/$row-size);
+    }
+
+    [class*=col-]:first-child {
+      margin-left: 50% * ($column-gutter/$row-size);
+    }
+
+
+    @mixin col($span) {
+
+      width: 100%;
+      max-width: 100%*(($span* $col-width - $column-gutter) / 
+                 $row-size);
+
+      margin-right: 100% * ($column-gutter/$row-size);
+    }
+
+    @for $span from 1 to 13 {
+      .col-#{$span} { @include col($span) }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  max-width: 992px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  padding-top: 10px; }
+  .container .row {
+    width: 100%;
+    max-width: 972px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto; }
+    .container .row [class*=col-] {
+      float: left;
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0; }
+    .container .row [class*=col-]:last-child {
+      margin-right: 0.5144%; }
+    .container .row [class*=col-]:first-child {
+      margin-left: 0.5144%; }
+    .container .row .col-1 {
+      width: 100%;
+      max-width: 7.30453%;
+      margin-right: 1.02881%; }
+    .container .row .col-2 {
+      width: 100%;
+      max-width: 15.63786%;
+      margin-right: 1.02881%; }
+    .container .row .col-3 {
+      width: 100%;
+      max-width: 23.97119%;
+      margin-right: 1.02881%; }
+    .container .row .col-4 {
+      width: 100%;
+      max-width: 32.30453%;
+      margin-right: 1.02881%; }
+    .container .row .col-5 {
+      width: 100%;
+      max-width: 40.63786%;
+      margin-right: 1.02881%; }
+    .container .row .col-6 {
+      width: 100%;
+      max-width: 48.97119%;
+      margin-right: 1.02881%; }
+    .container .row .col-7 {
+      width: 100%;
+      max-width: 57.30453%;
+      margin-right: 1.02881%; }
+    .container .row .col-8 {
+      width: 100%;
+      max-width: 65.63786%;
+      margin-right: 1.02881%; }
+    .container .row .col-9 {
+      width: 100%;
+      max-width: 73.97119%;
+      margin-right: 1.02881%; }
+    .container .row .col-10 {
+      width: 100%;
+      max-width: 82.30453%;
+      margin-right: 1.02881%; }
+    .container .row .col-11 {
+      width: 100%;
+      max-width: 90.63786%;
+      margin-right: 1.02881%; }
+    .container .row .col-12 {
+      width: 100%;
+      max-width: 98.97119%;
+      margin-right: 1.02881%; }
+
+/*# sourceMappingURL=garrett-grid.css.map */
